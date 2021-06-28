@@ -16,6 +16,6 @@ Around 2008 & 2009, when the institutions and markets we trusted went crumbling 
 
 But... With no central authority, how did Bitcoin realize trust and security? By implementing software programs for validation, verification, consensus in a novel infrastructure called the **blockchain**. Blockchain is about enabling peer to peer transaction in a decentralized network, establishing trust among unknown peers and recording the transaction in an immutable distributed ledger.  
 
-![](/images/Intro-Blockchain.jpg "The Blockchain")
+![](My-Blockchain-Book/images/Intro-Blockchain.jpg "The Blockchain")
 
 Later on in about 2012 & 2013, computation elements were added to the blockchain infrastructure that has opened up a whole world of possibilities beyond simple currency transfer. 
