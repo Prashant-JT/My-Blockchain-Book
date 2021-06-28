@@ -1,4 +1,3 @@
 # About
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
-
+Blog written by [Prashant Jeswani Tejwani](https://github.com/Prashant-JT), [Sumit Kumar Jethani](https://github.com/sumitkumarjethani).
