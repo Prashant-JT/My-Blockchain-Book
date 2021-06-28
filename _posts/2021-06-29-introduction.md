@@ -14,8 +14,7 @@ Around 2008 & 2009, when the institutions and markets we trusted went crumbling 
 
 | *Bitcoin enabled an innovative platform for peer to peer transfer of value without any central authority.* |
 
-But... With no central authority, how did Bitcoin realize trust and security?
-
+But... With no central authority, how did Bitcoin realize trust and security? By implementing software programs for validation, verification, consensus in a novel infrastructure called the blockchain. 
 
 ## Basic formatting
 
