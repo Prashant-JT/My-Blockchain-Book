@@ -1,3 +1,3 @@
 # My-Blockchain-Book
 
- Blog explaining Blockchain Basics.
+ Blog explaining the basics of Blockchain.
