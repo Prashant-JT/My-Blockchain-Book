@@ -14,7 +14,7 @@ Alrededor de 2008, 2009, cuando las instituciones y mercados en los que confiáb
 una persona misteriosa, o personas, llamada Satoshi Nakamoto, introdujo una nueva moneda digital, una criptomoneda llamada **Bitcoin**. 
 
 | *Bitcoin habilitó una plataforma innovadora para la transferencia de valor entre pares sin ninguna autoridad central.* |
-![](/My-Blockchain-Book/images/Intro-Blockchain.jpg "The Blockchain")
+![](/My-Blockchain-Book/images/peer_to_peer.jpg "Transferencia de valor entre pares")
 
 ## The Blockchain
 
