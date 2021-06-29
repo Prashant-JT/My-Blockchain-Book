@@ -40,7 +40,7 @@ This is an example of a **centralized network** that we are all used to.
 A **decentralized network** is a system where peers can transact directly with each other irrespective of where they are located. Functions of the intermediaries are shifted to the periphery to the peer participant in the blockchain infrastructure. Peers are not necessarily known to each other. 
 
 ![](/My-Blockchain-Book/images/Centralized-Decentralized.png "Centralized vs decentralized system")
-[Click to read more](https://medium.com/hackernoon/centralization-vs-decentralization-the-best-and-worst-of-both-worlds-7bfdd628ad09)
+[Click to read more about centralized and decentralized systems](https://medium.com/hackernoon/centralization-vs-decentralization-the-best-and-worst-of-both-worlds-7bfdd628ad09)
 
 Now, how do we establish trust among the peers in such a decentralized system?
 
