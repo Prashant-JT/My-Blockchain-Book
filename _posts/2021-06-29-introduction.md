@@ -37,7 +37,7 @@ Consider a scenario where a customer wants to buy an item using his credit card.
 - The merchant
 
 This is an example of a **centralized network** that we are all used to.
-A **Decentralized network** a system where peers can transact directly with each other irrespective of where they are located. Functions of the intermediaries are shifted to the periphery to the peer participant in the blockchain infrastructure. Peers are not necessarily known to each other. 
+A **decentralized network** a system where peers can transact directly with each other irrespective of where they are located. Functions of the intermediaries are shifted to the periphery to the peer participant in the blockchain infrastructure. Peers are not necessarily known to each other. 
 
 Now, how do we establish trust among the peers in such a decentralized system?
 
