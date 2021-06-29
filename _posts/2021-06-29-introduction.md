@@ -26,7 +26,7 @@ Later on in about 2012 & 2013, computation elements were added to the blockchain
 The blockchain by itself has taken a life of its own and permeated a broad range of applications across many industries, including finance, healthcare, government, manufacturing, and distribution. 
 
 
-## What is a decentralized network?
+### What is a decentralized network?
 
 Consider a scenario where a customer wants to buy an item using his credit card. The intermediaries involved in accomplishing this task will be: 
 - A credit card agency
@@ -56,3 +56,17 @@ This is the tenet/principle of a decentralized system supported by blockchain.
 In the case just described, how do we trust our unknown peers? Through **verification and validation**. Amy requests Kevin to verify the amount David transacted with her. Kevin checks it and... oops, Kevin finds the amount of the transaction is not $10,000, but $300, so it's not valid. Kevin rejects and nullifies the transaction.
 
 Similar to these, validation, then verification methods devised by the blockchain and implemented by the peers provide the collector trust needed in a decentralized system.  
+
+### Blockchain Structure
+
+Transaction is the basic element of the Bitcoin Blockchain.
+1. Transactions are validated and broadcast.
+2. Many transactions form a block.
+3. Many blocks form a chain through a digital data link.
+4. Blocks go through a consensus process, to select the next block that will be added to the chain. 
+5. Chosen block is verified, and added to the current chain. 
+6. Validation and consensus process are carried out by special peer nodes called miners. These are powerful computers executing software defined by the blockchain protocol.
+
+Let's discuss the details of a single transaction in bitcoin:
+
+
