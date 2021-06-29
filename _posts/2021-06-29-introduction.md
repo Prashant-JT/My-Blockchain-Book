@@ -42,7 +42,7 @@ A **decentralized network** is a system where peers can transact directly with e
 ![](/My-Blockchain-Book/images/Centralized-Decentralized.png "Centralized vs decentralized system")
 [Click to read more about centralized and decentralized systems](https://medium.com/hackernoon/centralization-vs-decentralization-the-best-and-worst-of-both-worlds-7bfdd628ad09)
 
-Now, how do we establish trust among the peers in such a decentralized system? By having a process in place to validate, verify, and confirm transactions. Record the transaction in a distributed ledger of blocks, create a tamper-proof record of blocks, chain of blocks, and implement a consensus protocol for agreement on the block to be added to the chain.
+Now, how do we establish trust among the peers in such a decentralized system? By having a process in place to validate, verify, and confirm transactions. Record the transaction in a distributed ledger of blocks, create a tamper-proof record of blocks (chain of blocks) and implement a consensus protocol for agreement on the block to be added to the chain.
 
 | *Validation, verification, consensus, and immutable recording lead to the trust and security of the blockchain* |
 
