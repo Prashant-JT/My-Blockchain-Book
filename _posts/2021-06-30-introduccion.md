@@ -19,7 +19,7 @@ Alrededor de 2008, 2009, cuando las instituciones y mercados en los que confiáb
 
 Pero... Sin una autoridad central, ¿cómo proporciona Bitcoin confianza y seguridad? Pues mediante la implementación de programas de software para validación, verificación y consenso en una infraestructura novedosa llamada **blockchain**. Más adelante, alrededor de 2012, 2013, se añadieron elementos de computación a la infraestructura de la blockchain que abrió todo un mundo de posibilidades más allá de la simple transferencia de divisas.  
 
-| *Blockchain se trata de habilitar transacciones peer to peer en una red descentralizada (trasnferencia de recursos digitales sin intermediarios) estableciendo la confianza entre pares o participantes desconocidos y registrando la transacción "en un libro digital" inmutable.* |
+| *Blockchain se trata de habilitar transacciones peer to peer en una red descentralizada (trasnferencia de recursos digitales sin intermediarios) estableciendo la confianza entre pares o participantes desconocidos y registrando la transacción en un libro digital inmutable.* |
 
 ![](/My-Blockchain-Book/images/Intro-Blockchain.jpg "The Blockchain")
 
