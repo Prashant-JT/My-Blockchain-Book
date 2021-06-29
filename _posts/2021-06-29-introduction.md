@@ -41,4 +41,5 @@ A **decentralized network** a system where peers can transact directly with each
 
 Now, how do we establish trust among the peers in such a decentralized system?
 
-![](/My-Blockchain-Book/images/Centralized-Decentralized.png "Centralized vs decentralized system [Click to read more](https://medium.com/hackernoon/centralization-vs-decentralization-the-best-and-worst-of-both-worlds-7bfdd628ad09)")
+![](/My-Blockchain-Book/images/Centralized-Decentralized.png [Click to read more](https://medium.com/hackernoon/centralization-vs-decentralization-the-best-and-worst-of-both-worlds-7bfdd628ad09))
+Centralized vs decentralized system
