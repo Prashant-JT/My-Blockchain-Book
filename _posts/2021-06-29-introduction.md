@@ -40,4 +40,5 @@ This is an example of a centralized system that we are all used to. But, what if
 
 Now, how do we establish trust among the peers in such a decentralized system?
 
-![](/My-Blockchain-Book/images/Centralized-Decentralized.png ![Click to read more](https://medium.com/hackernoon/centralization-vs-decentralization-the-best-and-worst-of-both-worlds-7bfdd628ad09))
+![](/My-Blockchain-Book/images/Centralized-Decentralized.png "Centralized vs decentralized system")
+![Click to read more](https://medium.com/hackernoon/centralization-vs-decentralization-the-best-and-worst-of-both-worlds-7bfdd628ad09)
