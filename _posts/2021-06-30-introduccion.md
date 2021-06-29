@@ -14,19 +14,17 @@ Alrededor de 2008, 2009, cuando las instituciones y mercados en los que confiáb
 una persona misteriosa, o personas, llamada Satoshi Nakamoto, introdujo una nueva moneda digital, una criptomoneda llamada **Bitcoin**. 
 
 | *Bitcoin habilitó una plataforma innovadora para la transferencia de valor entre pares sin ninguna autoridad central.* |
-![](/My-Blockchain-Book/images/peer_to_peer.jpg "Transferencia de valor entre pares")
+![](/My-Blockchain-Book/images/peer_to_peer.png "Transferencia de valor entre pares")
 
-## The Blockchain
+## Blockchain
 
-But... With no central authority, how did Bitcoin realize trust and security? By implementing software programs for validation, verification, consensus in a novel infrastructure called the **blockchain**. 
-Later on in about 2012 & 2013, computation elements were added to the blockchain infrastructure that has opened up a whole world of possibilities beyond simple currency transfer.
+Pero... Sin una autoridad central, ¿cómo proporciona Bitcoin confianza y seguridad? Pues mediante la implementación de programas de software para validación, verificación y consenso en una infraestructura novedosa llamada **blockchain**. Más adelante, alrededor de 2012, 2013, se añadieron elementos de computación a la infraestructura de la blockchain que abrió todo un mundo de posibilidades más allá de la simple transferencia de divisas.  
 
-| *Blockchain is about enabling peer to peer transaction in a decentralized network (transfer of digital assets without any intermediaries), establishing trust among unknown peers (a collective trust model) and recording the transaction in an immutable distributed ledger* |
+| * Blockchain se trata de habilitar transacciones peer to peer en una red descentralizada (trasnferencia de recursos digitales sin intermediarios) estableciendo la confianza entre pares o participantes desconocidos y registrando la transacción "en un libro digital" inmutable.* |
 
 ![](/My-Blockchain-Book/images/Intro-Blockchain.jpg "The Blockchain")
 
-The blockchain by itself has taken a life of its own and permeated a broad range of applications across many industries, including finance, healthcare, government, manufacturing, and distribution. 
-
+La cadena de bloques ha abarcado actualmente una amplia gama de aplicaciones en muchas industrias, incluyendo finanzas, salud, gobierno, fabricación y distribución.
 
 ## What is a decentralized network?
 
