@@ -12,14 +12,14 @@ Two major contributions of cryptocurrency Bitcoin are:
 
 Around 2008 & 2009, when the institutions and markets we trusted went crumbling down, and everybody was running away from the Wall Street, a mysterious person, or persons, called Satoshi Nakamoto, introduced a new digital currency, a cryptocurrency called **Bitcoin**. 
 
-| *Bitcoin enabled an innovative platform for peer to peer transfer of value without any central authority* |
+> *Bitcoin enabled an innovative platform for peer to peer transfer of value without any central authority*
 
 ## The Blockchain
 
 But... With no central authority, how did Bitcoin realize trust and security? By implementing software programs for validation, verification, consensus in a novel infrastructure called the **blockchain**. 
 Later on in about 2012 & 2013, computation elements were added to the blockchain infrastructure that has opened up a whole world of possibilities beyond simple currency transfer.
 
-| *Blockchain is about enabling peer to peer transaction in a decentralized network (transfer of digital assets without any intermediaries), establishing trust among unknown peers (a collective trust model) and recording the transaction in an immutable distributed ledger* |
+> Blockchain is about enabling peer to peer transaction in a decentralized network (transfer of digital assets without any intermediaries), establishing trust among unknown peers (a collective trust model) and recording the transaction in an immutable distributed ledger
 
 ![](/My-Blockchain-Book/images/Intro-Blockchain.jpg "The Blockchain")
 
@@ -44,7 +44,7 @@ A **decentralized network** is a system where peers can transact directly with e
 
 Now, how do we establish trust among the peers in such a decentralized system? By having a process in place to validate, verify, and confirm transactions. Record the transaction in a distributed ledger of blocks, create a tamper-proof record of blocks (chain of blocks) and implement a consensus protocol for agreement on the block to be added to the chain.
 
-| *Validation, verification, consensus, and immutable recording lead to the trust and security of the blockchain* |
+> *Validation, verification, consensus, and immutable recording lead to the trust and security of the blockchain*
 
 Let's see this in action: David leds Amy $10,000 (this is one single peer to peer transaction) and both make a note of it in a ledger (book). But, David is a cheater and he writes in his ledger that he lent Amy $12,000. Alternatively, Amy also changes her note from $10,000 to $1,000. So where is the trust?
 
