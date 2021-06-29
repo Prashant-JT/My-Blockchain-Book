@@ -23,7 +23,7 @@ Later on in about 2012 & 2013, computation elements were added to the blockchain
 
 ![](/My-Blockchain-Book/images/Intro-Blockchain.jpg "The Blockchain")
 
-Later on in about 2012 & 2013, computation elements were added to the blockchain infrastructure that has opened up a whole world of possibilities beyond simple currency transfer. The blockchain by itself has taken a life of its own and permeated a broad range of applications across many industries, including finance, healthcare, government, manufacturing, and distribution. 
+The blockchain by itself has taken a life of its own and permeated a broad range of applications across many industries, including finance, healthcare, government, manufacturing, and distribution. 
 
 
 ## What is a decentralized network?
