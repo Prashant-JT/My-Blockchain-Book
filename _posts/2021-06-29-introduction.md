@@ -110,5 +110,19 @@ Note that there are three input UTXOs and only two output UTXOs. This means that
 
 A block is composed of a header of information about the block, and a set of valid transaction. 
 
-![](/My-Blockchain-Book/images/Block-header.PNG "Header of information") 
-![](/My-Blockchain-Book/images/Block-transaction.PNG "Set of valid transaction") 
+![](/My-Blockchain-Book/images/Block-header.PNG "Header of information")
+
+This is the genesis block. Satoshi Nakamoto initiated the Bitcoin Blockchain with one transaction of 50 BTC. The data the Blockchain creation is January third, 2009.
+There was no previous block so the *Previous Block* field is all zeros. It also list a block reward or minus fees of 50 BTC. We'll discuss minus reward in a later blog.
+
+![](/My-Blockchain-Book/images/Block-transaction.PNG "Set of valid transaction")
+
+Now, let's look at the structure of the Blockchain by peeking into the Bitcoin Blockchain. Our goal is to understand the link between the blocks.
+Let's consider the chain of three blocks: #488867, #488868 and #488869. 
+
+![](/My-Blockchain-Book/images/Block-link.PNG "Blocks #488867, #488868 and #488869")
+
+#488868 shown in the middle, has the hash of #488867 as its previous hash. The block #488869 has the hash of #488868 as its previous hash, forming the links in the chain.
+
+To summarize, transaction bring about transfer of value in the Bitcoin Blockchain. The concept of UTXO defines the inputs and outputs of such a transaction.
+Once a block is verified an algorithmically agreed upon by the miners, it is added to the chain of blocks, called the Blockchain. 
