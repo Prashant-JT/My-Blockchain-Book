@@ -13,6 +13,7 @@ Las dos principales contribuciones de la criptomoneda Bitcoin son:
 Alrededor de 2008, 2009, cuando las instituciones y mercados en los que confiábamos se desmoronaron, y todo el mundo estaba huyendo de Wall Street, una persona misteriosa, o personas, llamada Satoshi Nakamoto, introdujo una nueva moneda digital, una criptomoneda llamada **Bitcoin**. 
 
 | *Bitcoin habilitó una plataforma innovadora para la transferencia de valor entre pares sin ninguna autoridad central.* |
+
 ![](/My-Blockchain-Book/images/peer_to_peer.PNG "Transferencia de valor entre pares")
 
 ## Blockchain
@@ -25,33 +26,32 @@ Pero... Sin una autoridad central, ¿cómo proporciona Bitcoin confianza y segur
 
 La cadena de bloques ha abarcado actualmente una amplia gama de aplicaciones en muchas industrias, incluyendo finanzas, salud, gobierno, fabricación y distribución.
 
-## What is a decentralized network?
+## Que es una red descentralizada?
 
-Consider a scenario where a customer wants to buy an item using his credit card. The intermediaries involved in accomplishing this task will be: 
-- A credit card agency
-- The customer's bank
-- A credit card bank
-- An exchange
-- The merchant's bank
-- The merchant
+Consideremos un escenario en el que un cliente quiere comprar un artículo con su tarjeta de crédito. Los intermediarios que estarán involucrados en la realización de esta tarea serán:
 
-This is an example of a **centralized network** that we are all used to.
-A **decentralized network** is a system where peers can transact directly with each other irrespective of where they are located. Functions of the intermediaries are shifted to the periphery to the peer participant in the blockchain infrastructure. Peers are not necessarily known to each other. 
+- Agencia de tarjeta de créditos.
+- Banco del cliente.
+- Banco de tarjetas de crédito.
+- Un intercambio.
+- Banco del comerciante.
+- El comerciante.
 
-![](/My-Blockchain-Book/images/Centralized-Decentralized.png "Centralized vs decentralized system")
-[Click to read more about centralized and decentralized systems](https://medium.com/hackernoon/centralization-vs-decentralization-the-best-and-worst-of-both-worlds-7bfdd628ad09)
+Este es un ejemplo de un **sistema centralizado** al que estamos tan acostumbrados. Ahora comparemos este con un sistema donde los participantes pueden realizar transacciones directamente entre ellos, independientemente de dónde se encuentren. Las funciones de los intermediarios del sistema centralizado se desplazan a la periferia al participante del mismo nivel en la infraestructura blockchain. Estos participantes o también llamados peers no son necesariamente conocidos entre sí. **Esto es un sistema descentralizado**.
 
-Now, how do we establish trust among the peers in such a decentralized system? By having a process in place to validate, verify, and confirm transactions. Record the transaction in a distributed ledger of blocks, create a tamper-proof record of blocks (chain of blocks) and implement a consensus protocol for agreement on the block to be added to the chain.
+![](/My-Blockchain-Book/images/Centralized-Decentralized.png "Sistema centralizado vs descentralizado")
+[Pincha para leer más sobre sistemas centralizados y descentralizados](https://medium.com/hackernoon/centralization-vs-decentralization-the-best-and-worst-of-both-worlds-7bfdd628ad09)
 
-| *Validation, verification, consensus, and immutable recording lead to the trust and security of the blockchain* |
+Pero ¿cómo establecemos la confianza entre los participantes en un sistema tan descentralizado? Pues disponiendo de un proceso para validar, verificar y confirmar las transacciones. Para posteriormente registrar dicha transacción en un "libro mayor distribuido de bloques", crear un registro de bloques a prueba de manipulaciones (cadena de bloques) e implementar un protocolo de consenso para acordar el bloque que se va a agregar a dicha cadena.
 
-Let's see this in action: David leds Amy $10,000 (this is one single peer to peer transaction) and both make a note of it in a ledger (book). But, David is a cheater and he writes in his ledger that he lent Amy $12,000. Alternatively, Amy also changes her note from $10,000 to $1,000. So where is the trust?
+| *Por lo tanto, la validación, la verificación, el consenso y la grabación inmutable conducen a la confianza y la seguridad de la cadena de bloques* |
 
-To prevent this trust violation, we need to seek the help of people around, for example, Lisa, Allison, and Francis, providing all of them a valid copy of this ledger. This is the basic concept of an **immutable distributed ledger** defined in a blockchain process. 
+Vamos a ver lo comentado a traves de un ejemplo: David le presta a Amy 10.000€ (esto es una única transacción punto a punto) y ambos lo anotan en sus libros mayores. Pero, David es deshonesto y cambia en su libro dicha entrada de 10.000€ a 11.000€. Amy hace lo mismo cambiando su entrada de 10.000 € a 1.000€. 
 
-In this scenario, they were all physically present in one location. Now imagine this to be an online transaction to an unknown peer. Also, scale up the one transaction to 10,000 transactions or about a million transactions. You should be able to transact with equal ease to any unknown peer in Australia, India or Albania. 
-This is the tenet/principle of a decentralized system supported by blockchain. 
+Para evitar esta violación de confianza, necesitamos buscar la ayuda de personas que nos rodean, por ejemplo, Lisa, Allison y Francis y le proporcionamos a todos ellos una copia válida de este libro mayor. Este es el concepto básico del **libro mayor distribuido inmutable** definido en un proceso blockchain. 
 
-In the case just described, how do we trust our unknown peers? Through **verification and validation**. Amy requests Kevin to verify the amount David transacted with her. Kevin checks it and... oops, Kevin finds the amount of the transaction is not $10,000, but $300, so it's not valid. Kevin rejects and nullifies the transaction.
+En este escenario, da la casulaidad que todos estamos físicamente presentes en un solo lugar. Ahora imaginemos que esto es una transacción online entre pares desconocidos. Además, en lugar de tener una única transacción tenemos 10.000 transacciones o tal vez un millón de transacciones. Deberíamos de ser capaz de realizar estas transacciones con la misma facilidad con cualquier otro participante desconocido en cualquier otro lugar. Este es el principio de un sistema descentralizado apoyado por blockchain.  
 
-Similar to these, validation, then verification methods devised by the blockchain and implemented by the peers provide the collector trust needed in a decentralized system.  
+En el caso que acabamos de describir, ¿cómo confiamos en otros participantes desconocidos? A través de **la verificación y validación**. En nuestro ejemplo, Amy le pide a Kevin que verifique la cantidad que David acordó con ella. Kevin lo comprueba y encuentra que la cantidad de la transacción no es 10.000, sino 300, por lo tanto no es válida. Kevin rechaza y anula la transacción.
+
+Similar a estos, la validación y los métodos de verificación ideados por la cadena de bloques e implementados por los pares proporcionan la confianza del colector necesaria en un sistema descentralizado.
