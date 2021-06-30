@@ -90,6 +90,8 @@ The transaction itself includes:
 Let's see an example of a transaction:
 
 ![](/My-Blockchain-Book/images/Transaction-Number.PNG "Transaction number") 
+
+There are three input UTXOs referenced and an arrow points to the references of the two output UTXOs
 ![](/My-Blockchain-Book/images/Input-UTXO.PNG "Input UTXOs") 
 ![](/My-Blockchain-Book/images/Output-UTXO.PNG "Output UTXOs") 
 
