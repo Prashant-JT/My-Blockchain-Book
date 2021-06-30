@@ -126,3 +126,7 @@ Let's consider the chain of three blocks: #488867, #488868 and #488869.
 
 To summarize, transaction bring about transfer of value in the Bitcoin Blockchain. The concept of UTXO defines the inputs and outputs of such a transaction.
 Once a block is verified an algorithmically agreed upon by the miners, it is added to the chain of blocks, called the Blockchain. 
+
+## Basic Operations
+
+Operations in the decentralized network are the responsibility of the peer participants and their respective computational nodes. 
