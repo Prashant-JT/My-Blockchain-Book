@@ -1,4 +1,6 @@
 # Introduction to Bitcoin
+> Introduction to the Blockchain Basics
+
 Table of contents:
 
 1. TOC
