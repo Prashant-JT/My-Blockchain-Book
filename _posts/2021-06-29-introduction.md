@@ -57,7 +57,7 @@ In the case just described, how do we trust our unknown peers? Through **verific
 
 Similar to these, validation, then verification methods devised by the blockchain and implemented by the peers provide the collector trust needed in a decentralized system.  
 
-### Blockchain Structure
+## Blockchain Structure
 
 Transaction is the basic element of the Bitcoin Blockchain.
 1. Transactions are validated and broadcast.
@@ -67,7 +67,9 @@ Transaction is the basic element of the Bitcoin Blockchain.
 5. Chosen block is verified, and added to the current chain. 
 6. Validation and consensus process are carried out by special peer nodes called miners. These are powerful computers executing software defined by the blockchain protocol.
 
-Let's discuss the details of a single transaction in bitcoin:
+## Bitcoin transaction
+
+Let's discuss the details of a single transaction in bitcoin.
 
 #### UTXO
 
@@ -107,3 +109,6 @@ Note that there are three input UTXOs and only two output UTXOs. This means that
 #### Block
 
 A block is composed of a header of information about the block, and a set of valid transaction. 
+
+![](/My-Blockchain-Book/images/Block-header.PNG "Header of information") 
+![](/My-Blockchain-Book/images/Block-transaction.PNG "Set of valid transaction") 
