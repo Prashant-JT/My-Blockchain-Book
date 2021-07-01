@@ -66,6 +66,41 @@ Una transacción es el elemento básico de la blockchain de bitcoin.
 5. El bloque elegido se verifica y se agrega a la cadena actual.
 6. El proceso de consenso y la validación son realizados por nodos especiales llamados mineros. Estos son potentes ordenadores ejecutando software definido por el protocolo de la blockchain. 
 
-### Bitcoin transaction
+### Transacción en Bitcoin
 
 Veamos ahora cuáles son detalles de una transacción en la blockchain de bitcoin.
+
+#### UTXO
+
+Un concepto fundamental de una red de bitcoin es una **Unspent Transaction Output (transacción de salida no gastada)**, también conocida como UTXO. El conjunto de todas las UTXOs en una red de bitcoin define colectivamente el estado de la cadena de bloques. 
+
+![](/My-Blockchain-Book/images/UTXO.PNG "UTXOs se referencian tanto como entradas de una transacción y como salidas deneradas por esa transacción. Todas esas UTXOs en un sistema, son almacenados por los nodos participantes en una base de datos") 
+
+[Picha aqui para leer más sobre UTXO (español)](https://academy.bit2me.com/que-es-una-utxo/)
+
+Ahora revisemos el papel de las UTXOs en una blockchain de bitcoin: una **transacción** utiliza la cantidad especificada por una o más UTXOs de entrada y la transmite a una o más UTXOs de salida recién creadas, según la petición iniciada por el remitente. La estructura de una **UTXO** dada es la siguiente:
+- Un identificador único de la transacción que creó este UTXO.
+- Un índice o posición de la UTXO en la lista de UTXOs de salida de la transacción.
+- Un valor o cantidad para la que es válida.
+- Y un texto opcional que indica las condiciones bajo las cuales la salida puede ser gastada.
+
+#### Transacción
+
+Una transacción a su vez incluye:
+- Un número de referencia de la transacción actual
+- Referencias a una o más UTXOs de entrada
+- Referencias a una o más UTXOs de salida recién generadas por la transacción actual, es decir, transacción de salida no gastada
+- Cantidad total de entrada y salida
+
+Let's see an example of a transaction:
+
+![](/My-Blockchain-Book/images/Transaction-Number.PNG "Transaction number") 
+
+There are three input UTXOs referenced and an arrow points to the references of the two output UTXOs:
+
+![](/My-Blockchain-Book/images/Input-UTXO.PNG "Input UTXOs") 
+![](/My-Blockchain-Book/images/Output-UTXO.PNG "Output UTXOs") 
+
+Note that there are three input UTXOs and only two output UTXOs. This means that the total amount in three input UTXOs are spent to generate two new output UTXOs. Below the output UTXOs is a total amount transferred in the Bitcoin value:
+
+![](/My-Blockchain-Book/images/BTC-total-value.PNG "Total amount transferred in Bitcoin value") 
