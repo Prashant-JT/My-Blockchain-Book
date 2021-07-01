@@ -26,7 +26,7 @@ Pero... Sin una autoridad central, ¿cómo proporciona Bitcoin confianza y segur
 
 La cadena de bloques ha abarcado actualmente una amplia gama de aplicaciones en muchas industrias, incluyendo finanzas, salud, gobierno, fabricación y distribución.
 
-## Que es una red descentralizada?
+### Que es una red descentralizada?
 
 Consideremos un escenario en el que un cliente quiere comprar un artículo con su tarjeta de crédito. Los intermediarios que estarán involucrados en la realización de esta tarea serán:
 
