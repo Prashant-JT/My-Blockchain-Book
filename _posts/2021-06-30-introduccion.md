@@ -55,3 +55,17 @@ En este escenario, da la casualidad que todos estamos físicamente presentes en 
 En el caso que acabamos de describir, ¿cómo confiamos en otros participantes desconocidos? A través de **la verificación y validación**. En nuestro ejemplo, Amy le pide a Kevin que verifique la cantidad que David acordó con ella. Kevin lo comprueba y encuentra que la cantidad de la transacción no es 10.000, sino 300, por lo tanto la transacción no es válida. Kevin rechaza y anula dicha transacción.
 
 Similar a estos, la validación y los métodos de verificación ideados por la cadena de bloques e implementados por los pares proporcionan la confianza del colector necesaria en un sistema descentralizado.
+
+### Estructura de la blockchain
+
+Una transacción es el elemento básico de la blockchain de bitcoin.
+1. Las transacciones son validadas y difundidas.
+2. Varias transacciones forman un bloque.
+3. Muchos bloques forman una cadena a través de un enlace de datos digital.
+4. Los bloques pasan por un proceso de consenso, para seleccionar cual será el siguiente bloque que se agregará a la cadena.
+5. El bloque elegido se verifica y se agrega a la cadena actual.
+6. El proceso de consenso y la validación son realizados por nodos especiales llamados mineros. Estos son potentes ordenadores ejecutando software definido por el protocolo de la blockchain. 
+
+### Bitcoin transaction
+
+Veamos ahora cuáles son detalles de una transacción en la blockchain de bitcoin.
