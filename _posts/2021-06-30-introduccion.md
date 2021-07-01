@@ -1,4 +1,6 @@
 # Introducción a Bitcoin
+> Introducción a conceptos básicos de cadena de bloques
+
 Table of contents:
 
 1. TOC
