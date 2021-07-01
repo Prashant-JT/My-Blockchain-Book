@@ -104,3 +104,29 @@ Vemos que justo abajo hay tres UTXOs de entrada a dicha transacción y una flech
 Observa que hay tres UTXOs de entrada y solo dos de salida. Esto significa que la cantidad total de las tres UTXOs de entrada se emplean en generar dos nuevas UTXOs de salida. Justo debajo de las UTXOs de salida está la cantidad total transferida en valor de Bitcoin.
 
 ![](/My-Blockchain-Book/images/BTC-total-value.PNG "Cantidad total transferida en valor de Bitcoin") 
+
+#### Bloque
+
+Un bloque dispone de una cabecera con información sobre el bloque y un conjunto de transacciones válidas.
+
+![](/My-Blockchain-Book/images/Block-header.PNG "Cabecera del bloque")
+
+Este el llamado bloque génesis. Satoshi Nakamoto inició la blockchain de Bitcoin con una transacción de 50 BTC. Esta transacción creó mitad de las UTXOs de salida hacia su propia dirección. La fecha de la creación de este bloque génesis en la blockchain es el 3 de enero de 2009.
+
+[Picha aqui para leer más sobre el bloque génesis (en español)](https://academy.bit2me.com/que-es-bloque-genesis/)
+
+No había ningún bloque anterior ya que este es el primero de la cadena, por lo que el campo **Previous Block** esta a cero. También se lista una recompensa de bloque o unos honorarios de minero de 50 BTC. Hablaremos de la recompensa del minero en lecciones más adelante. 
+
+![](/My-Blockchain-Book/images/Block-transaction.PNG "Conjunto de transacciones válidas en el bloque génesis")
+
+Ahora, echemos un vistazo a la estructura de la Blockchain mirando en la blockchain de Bitcoin. Nuestro objetivo es entender la relación entre los bloques. Consideremos la cadena de tres bloques: #488868, #488867 y #488869.
+
+![](/My-Blockchain-Book/images/Block-link.PNG "Bloques #488867, #488868 y #488869")
+
+Vemos que el bloque #488868 que se muestra en el medio, tiene el hash del bloque #488867 como su hash anterior. Por otra lado, el bloque #488869 tiene el hash del #488868 como su hash anterior, formando de esta manera **los enlaces en la cadena**.
+
+En resumen, una transacción genera la transferencia de valor en la blockchain de Bitcoin. El concepto de UTXO define las entradas y salidas de dichas transacciones. Una vez que un bloque es verificado y algorítmicamente acordado por los mineros, se agrega a la cadena de bloques, es decir, a la blockchain.
+
+## Basic Operations
+
+Operations in the decentralized network are the responsibility of the peer participants and their respective computational nodes. 
