@@ -92,15 +92,15 @@ Una transacción a su vez incluye:
 - Referencias a una o más UTXOs de salida recién generadas por la transacción actual, es decir, transacción de salida no gastada
 - Cantidad total de entrada y salida
 
-Let's see an example of a transaction:
+Veamos ahora un ejemplo de una transacción real
 
-![](/My-Blockchain-Book/images/Transaction-Number.PNG "Transaction number") 
+![](/My-Blockchain-Book/images/Transaction-Number.PNG "Identificador de la transacción") 
 
-There are three input UTXOs referenced and an arrow points to the references of the two output UTXOs:
+Vemos que justo abajo hay tres UTXOs de entrada a dicha transacción y una flecha que señala a las UTXOs de salida de la transacción
 
-![](/My-Blockchain-Book/images/Input-UTXO.PNG "Input UTXOs") 
-![](/My-Blockchain-Book/images/Output-UTXO.PNG "Output UTXOs") 
+![](/My-Blockchain-Book/images/Input-UTXO.PNG "UTXOs de entrada") 
+![](/My-Blockchain-Book/images/Output-UTXO.PNG "UTXOs de salida") 
 
-Note that there are three input UTXOs and only two output UTXOs. This means that the total amount in three input UTXOs are spent to generate two new output UTXOs. Below the output UTXOs is a total amount transferred in the Bitcoin value:
+Observa que hay tres UTXOs de entrada y solo dos de salida. Esto significa que la cantidad total de las tres UTXOs de entrada se emplean en generar dos nuevas UTXOs de salida. Justo debajo de las UTXOs de salida está la cantidad total transferida en valor de Bitcoin.
 
-![](/My-Blockchain-Book/images/BTC-total-value.PNG "Total amount transferred in Bitcoin value") 
+![](/My-Blockchain-Book/images/BTC-total-value.PNG "Cantidad total transferida en valor de Bitcoin") 
