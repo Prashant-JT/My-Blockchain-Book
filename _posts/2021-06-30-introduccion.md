@@ -148,3 +148,13 @@ Podemos distinguir entre dos tipos de participantes:
 
 Los mineros son **recompensados** con bitcoins (o la criptomoneda correspondiente) por sus esfuerzos en gestionar la cadena de bloques.
 
+### Validación de transacciones
+
+La **validación de las transacciones** se realiza de forma independiente por todos los mineros. Este proceso consiste en la validación de más de 20 requisitos, incluyendo tamaño, sintaxis, etc. Algunos de estos criterios pueden ser por ejemplo, que los UTXOs de entrada y salida de la transacción son correctos o que la cantidad de entrada y la cantidad de salida emparejan correctamente. 
+
+![](/My-Blockchain-Book/images/Transaction-Validation.PNG "Proceso de validación de las transacciones")
+
+Las transacciones no válidas se rechazan y no serán transmitidas a la blockchain. Todas aquellas transacciones válidas se añaden a un grupo de transacciones no confirmadas de las que los **mineros** procederán a seleccionar un conjunto de ellas para poder crear un bloque. Pero esto genera el problema de que si cada minero agrega un bloque a la cadena, habrán muchas ramas en la cadena, resultando en un estado inconsistente de la misma. Recuerda que la blockchain es **una sola consistente y enlazada cadena de flujo**. Por lo tanto, necesitamos un sistema para poder superar este problema.
+
+La solución es que los mineros van a competir para resolver un puzle para determinar quién se gana el derecho a crear el siguiente bloque en la cadena. En el caso de la blockchain de Bitcoin este puzle se trata de un problema de cálculo que utiliza intensivamente la CPU. Una vez que un minero soluciona el puzle, el anuncio se difunde a la red y el bloque se transmite también a la red. A continuación, otro participante verifica el nuevo bloque. Tras ello los participantes llegan a un consenso para agregar un nuevo bloque a la cadena o blockchain y además este nuevo bloque es añadido a su copia local de la blockchain (consistencia). Y de esta manera nuevas transacciones son **registradas y confirmadas** en la blockchain. Este algoritmo de consenso se llama **proof-of-work** puesto que implica potencia computacional para resolver el puzle y para reclamar el derecho de crear el siguiente bloque. 
+
