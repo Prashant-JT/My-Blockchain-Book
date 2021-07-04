@@ -127,6 +127,24 @@ Vemos que el bloque #488868 que se muestra en el medio, tiene el hash del bloque
 
 En resumen, una transacción genera la transferencia de valor en la blockchain de Bitcoin. El concepto de UTXO define las entradas y salidas de dichas transacciones. Una vez que un bloque es verificado y algorítmicamente acordado por los mineros, se agrega a la cadena de bloques, es decir, a la blockchain.
 
-## Basic Operations
+## Operaciones básicas en Blockchain
 
-Operations in the decentralized network are the responsibility of the peer participants and their respective computational nodes. 
+Las operaciones en una red descentralizada son responsabilidad de los participantes (peers) y de sus respectivos nodos computacionales, estos últimos pueden ser: portátil, ordenador o bastidores de servidores. Estas operaciones incluyen:
+- Validación de las transacciones
+- Agrupar las transacciones en un bloque
+- Publicar bloques y transacciones válidas
+- Llegar a un consenso para la creación del siguiente bloque de la cadena
+- Encadenar bloques para crear un registro inmutable
+
+### Participantes
+
+Podemos distinguir entre dos tipos de participantes:
+- Aquellos que inician la transferencia de valor creando una transacción
+- **Miners**: son aquellos que deciden realizar un "trabajos o cálculos" extra para verificar las transacciones y emitir transacciones. Además compiten con otros mineros para poder crear un bloque, trabajan por conseguir consenso al validar un bloque, aparte de emitir el nuevo bloque y confirmar transacciones.
+
+![](/My-Blockchain-Book/images/participantes.PNG "Participantes en la Blockchain")
+
+**¿Pero porqué un participante se hace cargo de este trabajo adicional?**
+
+Los mineros son **recompensados** con bitcoins (o la criptomoneda correspondiente) por sus esfuerzos en gestionar la cadena de bloques.
+
