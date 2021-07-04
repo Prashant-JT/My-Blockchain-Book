@@ -158,3 +158,10 @@ Las transacciones no válidas se rechazan y no serán transmitidas a la blockcha
 
 La solución es que los mineros van a competir para resolver un puzle para determinar quién se gana el derecho a crear el siguiente bloque en la cadena. En el caso de la blockchain de Bitcoin este puzle se trata de un problema de cálculo que utiliza intensivamente la CPU. Una vez que un minero soluciona el puzle, el anuncio se difunde a la red y el bloque se transmite también a la red. A continuación, otro participante verifica el nuevo bloque. Tras ello los participantes llegan a un consenso para agregar un nuevo bloque a la cadena o blockchain y además este nuevo bloque es añadido a su copia local de la blockchain (consistencia). Y de esta manera nuevas transacciones son **registradas y confirmadas** en la blockchain. Este algoritmo de consenso se llama **proof-of-work** puesto que implica potencia computacional para resolver el puzle y para reclamar el derecho de crear el siguiente bloque. 
 
+### Transacción Cero o Coinbase
+
+![](/My-Blockchain-Book/images/Coinbase-Transaction.PNG "Transacción Coinbase o Cero")
+
+La transacción cero, es decir, el índice cero de un bloque confirmado, es creada por el minero del bloque. Se caracteriza por tener un UTXO especial y por no tener ningun UTXO de entrada. A este tipo de transacción se la conoce como **transacción coinbase** y estas generan una tarifa o recompensa para el minero por la creación del bloque.
+
+En resumen, las principales operaciones en una blockchain son la validación de transacciones y la creación de bloques con el consenso de los participantes. 
