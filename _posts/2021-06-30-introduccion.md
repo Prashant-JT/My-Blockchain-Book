@@ -185,3 +185,15 @@ Teniendo en cuenta las capacidades anteriores, podemos distinguir entre tres tip
 - **Tipo 3**: no implica ninguna moneda, pero admite la ejecución de software para la lógica empresarial, por ejemplo, la Hyperledger de la Fundación Linux.
 
 ![](/My-Blockchain-Book/images/Types-of-blockchain.PNG "Tipos de Blockchain")
+
+### Categorías de la Blockchain
+
+Con la adición de la ejecución de un código, viene la seria consideración sobre el tema de acceso público a la cadena de bloques, por lo tanto, teniendo en cuenta los límites de acceso a la blockchain podemos clasificarlas en:
+
+- **Blockchain pública**: por ejemplo Bitcoin. Ya que todo en esta cadena esta soportado por sus participantes públicos y cualquiera puede unirse e irse cuando desee. Además los bloques que contienen las transacciones y la cadena de bloques son públicamente observables a pesar de que los participantes son anónimos. Es de código abierto (ya mencionado) y también se puede crear nueva moneda digital mediante la modificación del código Bitcoin.
+- **Blockchain privada**: en este tipo el acceso a la blockchain está limitado a ciertos participantes seleccionados, por ejemplo, aquellos participantes dentro de una organización. Esta restricción ayuda a simplificar las operaciones normales, como la creación de bloques y el modelo de contingencia.
+- **Blockchain permisiva**: también conocida como la blockchain de consorcio. Este tipo de blockchain está destinada a un consorcio entre partes colaboradoras para realizar transacciones en una cadena de bloques para facilitar la gobernanza, la procedencia y la rendición de cuentas, por ejemplo,
+un consorcio de todas las compañías de automóviles u organizaciones de salud. Esta blockchain tiene los beneficios de una cadena de bloques pública al permitir que solo los usuarios con permiso colaboren y realicen transacciones. 
+
+En resumen, innovaciones significativas como los **contratos inteligentes** han abierto aplicaciones más amplias para la tecnología blockchain. La
+cadena de bloques privada y permisiva permite el acceso controlado a la cadena de bloques, lo que permite generar diversos modelos de negocio. 
