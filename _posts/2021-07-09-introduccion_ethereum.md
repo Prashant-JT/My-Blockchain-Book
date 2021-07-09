@@ -7,12 +7,10 @@ Table of contents:
 {:toc}
 
 ## Introducción
-Las dos principales contribuciones de la criptomoneda Bitcoin son:
-  1. Un sistema de moneda digital que funciona continuamente.
-  2. Un modelo para la tecnología autónoma de aplicaciones descentralizadas llamada blockchain.
+La blockchain de Bitcoin es la madre de todas las blockchains. Fue diseñada para la transferencia de valor entre pares y lo hace bien. Pero, alrededor de 2013 se introdujó un marco para la ejecución de código que fue introducido por los fundadores de Ethereum. La pieza central y el empuje de esta blockchain  de Ethereum es el llamado **contrato inteligente**. 
 
-Alrededor de 2008, 2009, cuando las instituciones y mercados en los que confiábamos se desmoronaron, y todo el mundo estaba huyendo de Wall Street, una persona misteriosa, o personas, llamada Satoshi Nakamoto, introdujo una nueva moneda digital, una criptomoneda llamada **Bitcoin**. 
+### Comparación Blockchain Bitcoin vs Ethereum
 
-| *Bitcoin habilitó una plataforma innovadora para la transferencia de valor entre pares sin ninguna autoridad central.* |
+![](/My-Blockchain-Book/images/Ethereum-vs-Bitcoin.PNG "Comparación de la Blockchain de Bitcoin contra Ethereum")
 
-![](/My-Blockchain-Book/images/peer_to_peer.PNG "Transferencia de valor entre pares")
+A la **izquierda** está la blockchain de Bitcoin y una aplicación de billetera para iniciar transacciones en dicha cadena. A la **derecha** está Ethereum que dió un paso significativo hacia la transformación de la cadena de bloques en un marco computacional que abrió todo un mundo de oportunidades en el entorno descentralizado. Ethereum permite **contratos inteligentes y máquinas virtuales** en las que se ejecutan dichos contratos inteligentes. Los contratos inteligentes, a su vez, permiten aplicaciones descentralizadas que logran más que una transferencia de valor. En este post, hablaremos de una visión general de alto nivel sobre los contratos inteligentes en lo que se refiere a la blockchain de Ethereum. 
