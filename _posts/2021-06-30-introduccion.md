@@ -164,4 +164,24 @@ La solución es que los mineros van a competir para resolver un puzle para deter
 
 La transacción cero, es decir, el índice cero de un bloque confirmado, es creada por el minero del bloque. Se caracteriza por tener un UTXO especial y por no tener ningun UTXO de entrada. A este tipo de transacción se la conoce como **transacción coinbase** y estas generan una tarifa o recompensa para el minero por la creación del bloque.
 
-En resumen, las principales operaciones en una blockchain son la validación de transacciones y la creación de bloques con el consenso de los participantes. 
+En resumen, las principales operaciones en una blockchain son la validación de transacciones y la creación de bloques con el consenso de los participantes.
+
+## Más alla de Bitcoin
+
+La blockchain de Bitcoin es de código abierto y todo el código está disponible en GitHub. A principios del año 2009 este código abierto se empleo para generar diferentes criptomonedas y alrededor de 300 nuevas criptomonedas fueron generadas.
+
+### Scripting y Smart contracts
+
+Bitcoin admite una característica opcional y especial llamada scripts para la transferencia condicional de valores. La Blockchain de Ethereum extendió esta característica de scripting en un marco de ejecución de código completo llamado **contratos inteligentes (smart contracts)**.
+
+Un contrato inteligente nos proporciona la capacidad poderosa de poder ejecutar cierto código e introducirlo en la lógica empresarial en la blockchain. 
+
+### Tipos de Blockchain
+
+Teniendo en cuenta las capacidades anteriores, podemos distinguir entre tres tipos de blockchain que emrgen de Bitcoin:
+
+- **Tipo 1**: opera únicamente con las monedas de la blockchain, por ejemplo, Bitcoin.
+- **Tipo 2**: permite criptomonedas y una capa lógica empresarial soportada por la ejecución de un código, por ejemplo, Ethereum.
+- **Tipo 3**: no implica ninguna moneda, pero admite la ejecución de software para la lógica empresarial, por ejemplo, la Hyperledger de la Fundación Linux.
+
+![](/My-Blockchain-Book/images/Types-of-blockchain.PNG "Tipos de Blockchain")
