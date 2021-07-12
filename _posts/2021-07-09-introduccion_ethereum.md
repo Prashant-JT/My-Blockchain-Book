@@ -94,6 +94,6 @@ Podemos apreciar el hash de la transacción, la altura de la cadena, la marca de
 
 Los bloques en la cadena de Ethereum tienen una **cabecera**, ciertas **transacciones** y **runner-up headers**. Veamos cuales son los detalles de un bloque con el siguiente ejemplo:
 
-![](/My-Blockchain-Book/images/Ethereum-Block.PNG "Estructura de bloque en Ethereum")
+![](/My-Blockchain-Book/images/Ethereum-Block.PNG "Ejemplo de un bloque en Ethereum")
 
 Este es un bloque real de Ethereum a la altura 4446308. Vemos en la imagen la altura del bloque, la marca de tiempo, el hash de bloque, su hash anterior, dificultad y dificultad total, tamaño, gas utilizado, límite de gas, nonce y la recompensa de bloque.
