@@ -45,4 +45,31 @@ La primera línea con "pragma" indica la versión del lenguaje de solidity. Tras
 
 Para ello usamos la **máquina virtual de Ethereum(EVM)**. Un contrato inteligente escrito un lenguaje de programación de alto nivel se traduce a código de bytes en EVM y, a continuación, se implementa en la máquina virtual de Ethereum. Cada nodo de la red alojará los mismos códigos de los contratos inteligentes en su máquina virtual de Ethereum.
 
-> Resumiendo, los contratos inteligentes agregan una capa lógica y computacional a la infraestructura de confianza soportada por la cadena de bloques. Los contratos inteligentes permiten la ejecución de código y mejorar la capacidad básica de transferencia de valor de la cadena de bloques Bitcoin. El código para este contrato inteligente está escrito en un lenguaje de alto nivel como Solidity y compilado a código de bytes para posteriormente ser ejecutado en una estructura especial conocida como máquina virtual Ethereum. 
+> Resumiendo, los contratos inteligentes agregan una capa lógica y computacional a la infraestructura de confianza soportada por la cadena de bloques. Los contratos inteligentes permiten la ejecución de código y mejorar la capacidad básica de transferencia de valor de la cadena de bloques Bitcoin. El código para este contrato inteligente está escrito en un lenguaje de alto nivel como Solidity y compilado a código de bytes para posteriormente ser ejecutado en una estructura especial conocida como máquina virtual Ethereum.
+
+## Estructura de Ethereum
+
+Recordemos que el estado de la blockchain de **Bitcoin** se define en términos de salidas de transacciones no utilizadas: UTXOs. **Ethereum** introduce formalmente el concepto de una **cuenta** como parte del protocolo.
+
+### Cuenta y Transacción en Ethereum
+
+- Una cuenta es tanto el origen como el destino de una transacción.
+- Una transacción actualiza directamente los saldos de la cuenta para mantener el estado de la cadena como ocurría en Bitcoin con los UTXOs.
+- Permiten la transmisión de valor y mensajes y datos entre las cuentas, que pueden dar lugar a las transiciones de estado.
+- Estas transferencias se implementan mediante transacciones. 
+
+![](/My-Blockchain-Book/images/Ethereum-Structure.PNG "Estructura de Ethereum")
+
+### Tipos de cuentas en Ethereum
+
+![](/My-Blockchain-Book/images/Ethereum-Account-Type.PNG "Tipos de cuentas en Ethereum")
+
+Existen dos tipos de cuenta en Ethereum:
+- Cuentas de **propiedad externa (Externally owned account or EOA)**: estas están controladas por claves privadas. Además, se necesita este tipo de cuenta para poder participar en la red de Ethereum ya que esta interactúa con la blockchain mediante transacciones.
+- Cuentas de **contrato (Contract accounts or CA)**: estas están controladas por un código y solo pueden ser activada mediante una cuenta de propiedad externa. Este tipo de cuenta representan a un contrato inteligente.
+
+### Tarifa de una transacción
+
+Cada cuenta tiene un saldo de monedas. Un nodo participante puede enviar una transacción ya sea para la transferencia de Ether o para invocar un código de un contrato inteligente o ambos. Ambos tipos de transacciones requieren de **tarifa o honorarios**. Por lo tanto, una cuenta debe tener un saldo suficiente para cubrir las tarifas necesarias para que las transacciones sean activadas. Las tarifas se pagan en **Wei** que es una denominación más baja de **Éther**. En la imagen siguiente se ve la correspondencia:
+
+![](/My-Blockchain-Book/images/Ether-Wei.PNG "Correspondencia Ether-Wei")
