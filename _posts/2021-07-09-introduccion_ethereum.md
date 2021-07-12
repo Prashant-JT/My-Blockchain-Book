@@ -51,7 +51,7 @@ Para ello usamos la **máquina virtual de Ethereum(EVM)**. Un contrato inteligen
 
 Recordemos que el estado de la blockchain de **Bitcoin** se define en términos de salidas de transacciones no utilizadas: UTXOs. **Ethereum** introduce formalmente el concepto de una **cuenta** como parte del protocolo.
 
-### Cuenta y Transacción en Ethereum
+### Cuentas
 
 - Una cuenta es tanto el origen como el destino de una transacción.
 - Una transacción actualiza directamente los saldos de la cuenta para mantener el estado de la cadena como ocurría en Bitcoin con los UTXOs.
@@ -60,7 +60,7 @@ Recordemos que el estado de la blockchain de **Bitcoin** se define en términos 
 
 ![](/My-Blockchain-Book/images/Ethereum-Structure.PNG "Estructura de Ethereum")
 
-### Tipos de cuentas en Ethereum
+### Tipos de cuentas
 
 ![](/My-Blockchain-Book/images/Ethereum-Account-Type.PNG "Tipos de cuentas en Ethereum")
 
@@ -73,3 +73,19 @@ Existen dos tipos de cuenta en Ethereum:
 Cada cuenta tiene un saldo de monedas. Un nodo participante puede enviar una transacción ya sea para la transferencia de Ether o para invocar un código de un contrato inteligente o ambos. Ambos tipos de transacciones requieren de **tarifa o honorarios**. Por lo tanto, una cuenta debe tener un saldo suficiente para cubrir las tarifas necesarias para que las transacciones sean activadas. Las tarifas se pagan en **Wei** que es una denominación más baja de **Éther**. En la imagen siguiente se ve la correspondencia:
 
 ![](/My-Blockchain-Book/images/Ether-Wei.PNG "Correspondencia Ether-Wei")
+
+### Estructura de las transacciones
+
+Una transacción en Ethereum incluye:
+- El **destinatario** del mensaje
+- La **firma digital** del remitente que autoriza la transferencia
+- La **cantidad de Wei** a transferir
+- Un campo de **datos opcional o una carga útil** que contiene un mensaje para un contrato inteligente
+- **STARTGAS** que es un valor que representa el número máximo de pasos computacionales para la transacción
+- **Precio del gas**, un valor que representa la tarifa que el remitente está dispuesto a pagar por los cálculos.
+
+Veamos un ejemplo de una transacción en la red de Ethereum:
+
+![](/My-Blockchain-Book/images/Ethereum-Transaction.PNG "Ejemplo de una transacción en Ethereum")
+
+Podemos apreciar el hash de la transacción, la altura de la cadena, la marca de tiempo, las cuentas de origen y destino, cantidad transferida, el límite de gas, el gas utilizado, estado de la transacción (success en este caso) y nonce. Esta transacción en particular esta invocando a un contrato inteligente. Por supuesto, para la ejecución de un contrato inteligente se incurre en ciertas tarifas y la cantidad disponible es especificada por los diversos campos de gas en la transacción. 
