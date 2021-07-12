@@ -1,4 +1,4 @@
-# Introducción a Bitcoin 🇬🇧
+# Introducción a Bitcoin
 > Introducción a conceptos básicos de blockchain
 
 Table of contents:
