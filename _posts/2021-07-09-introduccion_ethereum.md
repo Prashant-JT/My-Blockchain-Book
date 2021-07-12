@@ -88,4 +88,12 @@ Veamos un ejemplo de una transacción en la red de Ethereum:
 
 ![](/My-Blockchain-Book/images/Ethereum-Transaction.PNG "Ejemplo de una transacción en Ethereum")
 
-Podemos apreciar el hash de la transacción, la altura de la cadena, la marca de tiempo, las cuentas de origen y destino, cantidad transferida, el límite de gas, el gas utilizado, estado de la transacción (success en este caso) y nonce. Esta transacción en particular esta invocando a un contrato inteligente. Por supuesto, para la ejecución de un contrato inteligente se incurre en ciertas tarifas y la cantidad disponible es especificada por los diversos campos de gas en la transacción. 
+Podemos apreciar el hash de la transacción, la altura de la cadena, la marca de tiempo, las cuentas de origen y destino, cantidad transferida, el límite de gas, el gas utilizado, estado de la transacción (success en este caso) y nonce. Esta transacción en particular esta invocando a un contrato inteligente. Por supuesto, para la ejecución de un contrato inteligente se incurre en ciertas tarifas y la cantidad disponible es especificada por los diversos campos de gas en la transacción.
+
+### Estructura de bloques
+
+Los bloques en la cadena de Ethereum tienen una **cabecera**, ciertas **transacciones** y **runner-up headers**. Veamos cuales son los detalles de un bloque con el siguiente ejemplo:
+
+![](/My-Blockchain-Book/images/Ethereum-Block.PNG "Estructura de bloque en Ethereum")
+
+Este es un bloque real de Ethereum a la altura 4446308. Vemos en la imagen la altura del bloque, la marca de tiempo, el hash de bloque, su hash anterior, dificultad y dificultad total, tamaño, gas utilizado, límite de gas, nonce y la recompensa de bloque.
