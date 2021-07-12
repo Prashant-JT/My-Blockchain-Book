@@ -1,4 +1,4 @@
-# Introducción a Ethereum
+# Introducción a Ethereum 🇪🇸
 > Introducción a conceptos básicos de la blockchain de Ethereum
 
 Table of contents:
