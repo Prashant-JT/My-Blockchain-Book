@@ -97,3 +97,21 @@ Los bloques en la cadena de Ethereum tienen una **cabecera**, ciertas **transacc
 ![](/My-Blockchain-Book/images/Ethereum-Block.PNG "Ejemplo de un bloque en Ethereum")
 
 Este es un bloque real de Ethereum a la altura 4446308. Vemos en la imagen la altura del bloque, la marca de tiempo, el hash de bloque, su hash anterior, dificultad y dificultad total, tamaño, gas utilizado, límite de gas, nonce y la recompensa de bloque.
+
+## Operaciones en Ethereum
+
+Para una simple transferencia de Ether en la blockchain de Ethereum, la cantidad a transferir y la dirección de destino se especifican junto con las tarifas o puntos de gas. El importe y las tasas se transfieren a sus respectivas cuentas. Veamos esto a tráves de un ejemplo:
+
+![](/My-Blockchain-Book/images/Ethereum-Operation.PNG "Ejemplo de una operación en Ethereum")
+
+En la imagen anterior, podemos ver una transacción de transferencia de 100 Ether entre las cuentas del remitente y del destinatario. Hay que tener en cuenta que además de esta transferencia, se pagan 21.000 puntos de gas al minero que agregó el bloque de transacción a la cadena de bloques.
+
+### Nodo
+
+Un **nodo** de Ethereum es un sistema computacional que representa una entidad empresarial o un participante individual. Un **nodo completo** de Ethereum aloja el software necesario para:
+- El inicio de las transacciones
+- Validación de las mismas
+- Minería
+- Creación de bloques
+- Ejecución de contratos inteligentes
+- La máquina virtual de Ethereum, EVM
