@@ -115,3 +115,17 @@ Un **nodo** de Ethereum es un sistema computacional que representa una entidad e
 - Creación de bloques
 - Ejecución de contratos inteligentes
 - La máquina virtual de Ethereum, EVM
+
+### Ejecución de un contrato inteligente
+
+![](/My-Blockchain-Book/images/Execution-SmartContract.PNG "Ejecución de un contrato inteligente")
+
+Esta figura muestra la **implementación y invocación de un contrato inteligente**. Un contrato inteligente está diseñado, desarrollado, compilado e implementado en el EVM y estas pueden tener más de un contrato inteligente. Cuando la dirección de destino en una transacción es un contrato inteligente, el código de ejecución correspondiente al contrato inteligente se activa y ejecuta en el EVM. La entrada necesaria para su ejecución se extrae del campo de datos opcionales de la transacción.
+
+El **estado actual** de un contrato son los valores de las variables que están definidas en él, pero este se puede actualizar mediante su ejecución. Los resultados de esta ejecución se guardan en los llamados **recibos**. Una cadena de bloques mantiene tanto el hash de estado como el de recibo.
+
+### Transacciones
+
+Todas las transacciones son **validadas**. Esta validación implica comprobar que la marca de tiempo y la combinación nonce sean válidas y la disponibilidad de honorarios o tarifas suficientes para la ejecución.
+
+Los **nodos mineros** de la red reciben, verifican, recopilan y ejecutan transacciones. Además, el código de invocación de un contrato inteligente es ejecutado por todos los mineros. Posterioemente, las transacciones validadas se difunden y se recopilan para la creación de bloques. **El protocolo de consenso utilizado en la red de Ethereum es una prueba de trabajo basada en memoria en lugar de una CPU**. Pero... ¿Quién paga todas estas operaciones de validación, verificación y consenso? Lo vemos a continuación.
