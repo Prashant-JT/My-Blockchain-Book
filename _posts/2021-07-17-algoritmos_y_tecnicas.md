@@ -9,12 +9,19 @@ Table of contents:
 1. TOC
 {:toc}
 
-## Criptografía de Clave Pública
+## Criptografía
 
+Recordemos que los participantes de una red descentralizada, no necesariamente son conocidos entre sí. Las credenciales no se pueden verificar por medios convencionales, como por ejemplo, verificar quién es usted con su carnet de conducir. Además, los participantes pueden unirse y salir de la cadena cuando deseen, es decir, operan más allá de los límites de la confianza. Teniendo en cuenta este contexto: ¿Cómo identificamos a los participantes del mismo nivel o de la red? ¿ Cómo autorizamos y autenticamos las transacciones? ¿Cómo se detectan transacciones falsas o defectuosas? Podemos conseguir todas estas cosas empleando algoritmos de criptografía de clave pública que comentaremos a continuación. 
 
-### Comparación Blockchain Bitcoin vs Ethereum
+### Criptografía de Clave Simétrica o Secreta
 
-![](/My-Blockchain-Book/images/Ethereum-vs-Bitcoin.PNG "Comparación de la Blockchain de Bitcoin contra Ethereum")
+En la criptografía de clave simétrica o cifrado simétrico  **la misma clave** se utiliza tanto para el **cifrado** como para el **descifrado**, es por ello que se le llama **clave simétrica**. Por ejemplo, en el cifrado simétrico de Cesar, que es el más simple ya que los alfabetos de un mensaje se desplazan por un número fijo, y este número en este caso se denomina **la clave**.
 
-A la **izquierda** está la blockchain de Bitcoin y una aplicación de billetera para iniciar transacciones en dicha cadena. A la **derecha** está Ethereum que dió un paso significativo hacia la transformación de la cadena de bloques en un marco computacional que abrió todo un mundo de oportunidades en el entorno descentralizado. Ethereum permite **contratos inteligentes y máquinas virtuales** en las que se ejecutan dichos contratos inteligentes. Los contratos inteligentes, a su vez, permiten aplicaciones descentralizadas que logran más que una transferencia de valor. En este post, hablaremos de una visión general de alto nivel sobre los contratos inteligentes en lo que se refiere a la blockchain de Ethereum. 
+![](/My-Blockchain-Book/images/Cesar-Encryption.PNG "Cifrado simétrico de Cesar")
 
+En este ejemplo "F" es una función definida por el desplazamiento del alfabeto en tres posiciones. Considera el ejemplo: «Meet me at the cinema». Por ejemplo, la letra M se sustutiye por la P (desplazada en 3 posiciones) para poder cifrar y tu receptor lo descifra haciendo el proceso alreves. En este ejemplo, **el número tres es la clave**. Dado que la misma clave (número 3 en el ejemplo) se utiliza para el cifrado y el descifrado, es una clave simétrica. Hay que tener en cuenta que la clave simétrica y las funciones de cifrado y descifrado
+suelen ser mucho más complejas en una aplicación real. 
+
+Pero el cifrado simétrico presenta dos problemas graves:
+- Es **fácil obtener la clave secreta** a partir de los datos cifrados
+- La **distribución de claves**, ¿cómo le pasamos la clave al participante con el que queremos realizar transacciones? 
