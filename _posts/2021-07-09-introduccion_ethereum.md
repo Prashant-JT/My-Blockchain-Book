@@ -142,4 +142,24 @@ Cualquier accción en Ethereum requiere de **gas** y estos se utilizan para espe
 En el proceso de minería se calculan los puntos de gas necesarios para la ejecución de una transacción. Si la tarifa especificada y
 el punto de gas en la transacción no son suficientes, se rechaza. Esto es similar a enviar una carta con franqueo insuficiente. La carta no se entregará si no tiene franqueo suficiente.
 
-Los puntos de gas necesarios para la ejecución de una transacción **deben estar disponibles en el saldo de la cuenta** para que dicha ejecución se lleve a cabo. Si queda algún importe después de la ejecución de una transacción, esta se devuelve a la cuenta de origen. 
+Los puntos de gas necesarios para la ejecución de una transacción **deben estar disponibles en el saldo de la cuenta** para que dicha ejecución se lleve a cabo. Si queda algún importe después de la ejecución de una transacción, esta se devuelve a la cuenta de origen.
+
+### Puntos de Gas (Bloque)
+
+Hasta ahora hemos hablado sobre el gas empleado en una transacción, ahora veamos el concepto de gas relacionado con un bloque.
+
+#### Límite de gas y gas gastado
+
+**Límite de gas** es la cantidad máxima de gas que un bloque podrá gastar. Por ejemplo, si un bloque especifica un límite de 1,5 millónes de unidades de gas, y una comisión básica de transacción de Ether es de 21.000, entonces en este bloque de Ethereum en particular pueden caber alrededor de 70 transacciones simples de Ether. Además, si agregamos en este bloque transacciones de contratos inteligentes, que por lo general requieren de mayor cantidad gas, entonces el número de transacciones para este bloque disminuirá.
+
+El **gas gastado** es la cantidad real de gas gastada al finalizar la creación del bloque actual. 
+
+### Modelo de incentivo minero
+
+El minero que consiga resolver el puzle del "Proof of Work" será el encargado de crear el bloque nuevo en la blockchain. Todos los mineros que compiten para poder crear un nuevo bloque están incentivados con las **tarifas básicas de 3 Ethers** además de las **tarifas de una transacción en la red de Ethereum**. El minero ganador también recibe los honorarios, puntos de gas para la ejecución de una transacción de contrato inteligente.
+
+Pero... pueden haber otros mineros que también resuelvan el rompecabezas o el puzle además del ganador. Estos mineros que también resolvieron el puzle pero no se ganaron el derecho para poder crear el bloque en la cadena son los llamados **Ommers**. Los bloques creados por ellos se llaman **Ommer Blocks** y estos se añaden como bloques Ommer, o bloques laterales, a la cadena principal. Además, estos mineros Ommer también obtienen un pequeño porcentaje del total de puntos de gas como consuelo y para la seguridad de la red.
+
+![](/My-Blockchain-Book/images/Mining-Incentive-Model.PNG "Modelo de incentivo minero")
+
+Resumiendo, cualquier transacción en Ethereum, incluida la transferencia de Ethers, requiere de tarifas o puntos de gas necesarios para ser especificados en las transacciones.Además, los mineros reciben honorarios o puntos de gas por seguridad, validación, ejecución de contratos inteligentes, así como por la creación de bloques. 
