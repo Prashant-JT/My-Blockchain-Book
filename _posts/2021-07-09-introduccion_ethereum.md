@@ -129,3 +129,17 @@ El **estado actual** de un contrato son los valores de las variables que están 
 Todas las transacciones son **validadas**. Esta validación implica comprobar que la marca de tiempo y la combinación nonce sean válidas y la disponibilidad de honorarios o tarifas suficientes para la ejecución.
 
 Los **nodos mineros** de la red reciben, verifican, recopilan y ejecutan transacciones. Además, el código de invocación de un contrato inteligente es ejecutado por todos los mineros. Posteriormente, las transacciones validadas se difunden y se recopilan para la creación de bloques. **El protocolo de consenso utilizado en la red de Ethereum es una prueba de trabajo basada en memoria en lugar de una CPU**. Pero... ¿Quién paga todas estas operaciones de validación, verificación y consenso? Lo vemos a continuación.
+
+## Modelo incentivo en Ethereum
+
+Recordemos que la **minería** es el proceso utilizado para proteger la red mediante la validación de los cálculos, la recopilación de ellos para formar un bloque, su verificación y difusión. **Ethereum también utiliza un modelo basado en incentivos para la creación de bloques**. A continuación procederemos a hablar sobre la estructura de tarifas y el modelo de incentivo en la red de Ethereum.
+
+### Puntos de Gas (Transacción)
+Cualquier accción en Ethereum requiere de **gas** y estos se utilizan para especificar las tarifas dentro de Ether. El **Ether**, como criptomoneda, varía su valor con las oscilaciones que se producen en el mercado, pero **los puntos de gas no varían**. Ethereum ha especificado puntos de gas para cada tipo de operación:
+
+![](/My-Blockchain-Book/images/Gas-Fees.PNG "Tarifas o puntos de gas en Ethereum")
+
+En el proceso de minería se calculan los puntos de gas necesarios para la ejecución de una transacción. Si la tarifa especificada y
+el punto de gas en la transacción no son suficientes, se rechaza. Esto es similar a enviar una carta con franqueo insuficiente. La carta no se entregará si no tiene franqueo suficiente.
+
+Los puntos de gas necesarios para la ejecución de una transacción **deben estar disponibles en el saldo de la cuenta** para que dicha ejecución se lleve a cabo. Si queda algún importe después de la ejecución de una transacción, esta se devuelve a la cuenta de origen. 
