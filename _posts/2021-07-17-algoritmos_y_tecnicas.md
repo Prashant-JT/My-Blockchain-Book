@@ -56,3 +56,10 @@ Una implementación popular de clave pública y clave privada es el algoritmo **
 #### Algoritmos de Cifrados Asimétricos: Criptografía de Curvas Elíptica (ECC)
 
 La criptografía de curvas elípticas, o la familia de algoritmos ECC se utiliza en la blockchain de Bitcoin, así como en la de Ethereum para generar el par de claves pública y privada. Pero... ¿Porqué ECC y no RSA? ECC es más fuerte que RSA para un número dado de bits. Por ejemplo, ¿Sabías que el par de claves ECC de 256 bits es igual en fuerza a unos 3072 bits de par de claves de RSA? Tanto bitcoin como Ethereum utilizan algoritmos basados en ECC para sus necesidades de cifrado. 
+
+## Hashing
+
+**¿Por qué debemos aprender acerca de cifrado por hashes?** El par de claves privada y pública es como un pasaporte metafórico para participar en las transacciones en la blockchain. Por ejemplo, es similar a cómo aprendemos a usar una tarjeta de crédito, asegurarla y protegerla. Necesitamos **proteger nuestra clave privada** para la seguridad de sus activos en la blockchain. A continuación, aprenderemos el papel fundamental que juega **hashing** en la blockchain, y también en la **integridad de la transacción y confidencialidad de los datos**.
+
+### ¿Qué es Hashing?
+
