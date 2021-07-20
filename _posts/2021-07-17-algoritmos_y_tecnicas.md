@@ -83,5 +83,5 @@ Ahora precederemo a explorar algunas técnicas comunes de hash. Compararemos dos
 
 ![](/My-Blockchain-Book/images/Simple-Hash.PNG "Hash Simple")
 
-En la imagen de arriba se ilustra un ejemplo de **hashing simple** y con la operación de "SUMA" como la función de hash, en este caso.
+En la imagen de arriba se muestra un ejemplo de **hashing simple** y con la operación de "SUMA" como la función de hash, en este caso.
 Usaremos los datos de entrada 10, 4, 6, 21 y 19. En la actualidad, las funciones de hashing son mucho más complejas que la función de hash del ejemplo mencionado y normalmente son variaciones de SHA-3, y los valores de datos de sálida son mucho más grandes, principalmente valores de 256 a 512 bits. **En este enfoque hashing simple, todos los elementos de datos son linealmente ordenados y cifrados**.
