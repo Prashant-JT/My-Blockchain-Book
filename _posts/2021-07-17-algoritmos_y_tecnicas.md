@@ -59,7 +59,29 @@ La criptografía de curvas elípticas, o la familia de algoritmos ECC se utiliza
 
 ## Hashing
 
-**¿Por qué debemos aprender acerca de cifrado por hashes?** El par de claves privada y pública es como un pasaporte metafórico para participar en las transacciones en la blockchain. Por ejemplo, es similar a cómo aprendemos a usar una tarjeta de crédito, asegurarla y protegerla. Necesitamos **proteger nuestra clave privada** para la seguridad de sus activos en la blockchain. A continuación, aprenderemos el papel fundamental que juega **hashing** en la blockchain, y también en la **integridad de la transacción y confidencialidad de los datos**.
+**¿Por qué debemos aprender acerca de cifrado por hashes?** El par de claves privada y pública es como un pasaporte metafórico para participar en las transacciones en la blockchain. Por ejemplo, es similar a cómo aprendemos a usar una tarjeta de crédito, asegurarla y protegerla. Necesitamos **proteger nuestra clave privada** para la seguridad de nuestros activos en la blockchain. A continuación, aprenderemos el papel fundamental que juega **hashing** en la blockchain, y también en la **integridad de la transacción y confidencialidad de los datos**.
 
 ### ¿Qué es Hashing?
 
+![](/My-Blockchain-Book/images/Hashing.PNG "Concepto de Hashing")
+
+Una función de **hash o hashing** transforma y mapea una longitud arbitraria del valor de datos de entrada a un valor único de **longitud fija**. Los datos de entrada puede ser un documento, un árbol de datos o un bloque de datos. Además, **una ligera diferencia en los datos de entrada produciría un valor de salida de hash completamente diferente**.
+
+Todas las funciones de hash deben cumplir con los dos siguientes requisitos:
+- El algoritmo elegido para la función de hash debe ser una **función unidireccional**. Este requisito es para asegurar que nadie puede obtener el valor original de los datos de entrada (cifrada por la función de hash) a partir del valor de la función de hash. Por ejemplo, ¿Puedes hacer papas partiendo de un puré de papas?
+- Y debe de ser **libre de colisión**, o tener muy baja probabilidad de colisión. Este requisito es para asegurar de que el valor de hash representa únicamente la información cifrada. Es decir, debe de haber muy baja probabilidad de que dos diferentes conjuntos de datos  de entrada se mapeen con el mismo valor de hash.
+
+### Tamaño y funciones de hash
+
+Los requisitos anteriores se cumplen al escoger un **algoritmo fuerte** como por ejemplo un hash seguro, y utilizando **gran número de bits** en el valor que se obtiene de la función de hash.
+
+El tamaño de hash más común actualmente es de 256 bits y las funciones más comunes son **SHA-3, SHA-256 y Keccak**. Pero... ¿Qué tan bueno es el valor hash de 256 bits? Un espacio de valor de hash de 256 bits es, efectivamente, uno bastante grande. Es decir hay 2^256 posibles combinaciones de valores. Eso es aproximadamente 10^77. Incluso, las probabilidades de que un meteoro golpee nuestra casa son mas altas que generar dos valores de hash idénticos de 256 bits cuando se aplica este algoritmo.
+
+Ahora precederemo a explorar algunas técnicas comunes de hash. Compararemos dos enfoques diferentes para cifrar según cómo estén organizados los elementos constitutivos: **simple hash o merkle tree hash**
+
+### Hash Simple
+
+![](/My-Blockchain-Book/images/Simple-Hash.PNG "Hash Simple")
+
+En la imagen de arriba se ilustra un ejemplo de **hashing simple** y con la operación de "SUMA" como la función de hash, en este caso.
+Usaremos los datos de entrada 10, 4, 6, 21 y 19. En la actualidad, las funciones de hashing son mucho más complejas que la función de hash del ejemplo mencionado y normalmente son variaciones de SHA-3, y los valores de datos de sálida son mucho más grandes, principalmente valores de 256 a 512 bits. **En este enfoque hashing simple, todos los elementos de datos son linealmente ordenados y cifrados**.
