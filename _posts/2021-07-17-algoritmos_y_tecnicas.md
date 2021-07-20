@@ -85,3 +85,15 @@ Ahora precederemo a explorar algunas técnicas comunes de hash. Compararemos dos
 
 En la imagen de arriba se muestra un ejemplo de **hashing simple** y con la operación de "SUMA" como la función de hash, en este caso.
 Usaremos los datos de entrada 10, 4, 6, 21 y 19. En la actualidad, las funciones de hashing son mucho más complejas que la función de hash del ejemplo mencionado y normalmente son variaciones de SHA-3, y los valores de datos de sálida son mucho más grandes, principalmente valores de 256 a 512 bits. **En este enfoque hashing simple, todos los elementos de datos son linealmente ordenados y cifrados**.
+
+### Hash de Árbol Merkle
+
+![](/My-Blockchain-Book/images/Merkle-Tree-Hash.PNG "Merkle Tree Hash")
+
+En el enfoque de hashing de un **árbol**, los datos estan situados en los nodos hoja del árbol y a las hojas de dicho árbol se le calcula el valor de hash por pares para llegar al mismo valor de hash que el hash simple.
+
+Pero... **¿Cuándo se utiliza un Hash de Árbol Merkle? y ¿Cuándo se utiliza un Hash Simple?**
+- **Hash Simple**: Cuando tenemos un número fijo de elementos a ser cifrados, como los elementos de la cabecera de un bloque y cuando estamos verificando la integridad del bloque y no la integridad del elemento por separado, utilizamos el hashing simple.
+- **Hash Árbol Merkle**: Por ejemplo, cuando el número de elementos difiere entre bloques, como el número de transacciones, número de estados, número de recibos, entonces utilizamos una estructura de árbol para calcular el hash. Hay que tener en cuenta que, el estado es una variable que puede ser modificada por la ejecución de un contrato inteligente, y el resultado de dicha ejecución puede ser devuelto en un recibo (lo veremos en futuros posts). 
+
+> Resumiendo, en Ethereum, las funciones de hash son utilizadas para generar direcciones de cuentas, firmas digitales, hash de las transacciones, hash de estados, hash de recibos y hash de encabezado de bloque. SHA-3, SHA-256, Keccak-256 son algunos de los algoritmos comúnmente utilizados para generar hashes en blockchains. 
