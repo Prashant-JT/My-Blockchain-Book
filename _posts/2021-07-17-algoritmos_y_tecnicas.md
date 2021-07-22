@@ -96,4 +96,15 @@ Pero... **¿Cuándo se utiliza un Hash de Árbol Merkle? y ¿Cuándo se utiliza 
 - **Hash Simple**: Cuando tenemos un número fijo de elementos a ser cifrados, como los elementos de la cabecera de un bloque y cuando estamos verificando la integridad del bloque y no la integridad del elemento por separado, utilizamos el hashing simple.
 - **Hash Árbol Merkle**: Por ejemplo, cuando el número de elementos difiere entre bloques, como el número de transacciones, número de estados, número de recibos, entonces utilizamos una estructura de árbol para calcular el hash. Hay que tener en cuenta que, el estado es una variable que puede ser modificada por la ejecución de un contrato inteligente, y el resultado de dicha ejecución puede ser devuelto en un recibo (lo veremos en futuros posts). 
 
-> Resumiendo, en Ethereum, las funciones de hash son utilizadas para generar direcciones de cuentas, firmas digitales, hash de las transacciones, hash de estados, hash de recibos y hash de encabezado de bloque. SHA-3, SHA-256, Keccak-256 son algunos de los algoritmos comúnmente utilizados para generar hashes en blockchains. 
+> Resumiendo, en Ethereum, las funciones de hash son utilizadas para generar direcciones de cuentas, firmas digitales, hash de las transacciones, hash de estados, hash de recibos y hash de encabezado de bloque. SHA-3, SHA-256, Keccak-256 son algunos de los algoritmos comúnmente utilizados para generar hashes en blockchains.
+
+## Integridad de las Transacciones
+
+Para gestionar la **integridad** de una transacción en la blockchain necesitamos:
+- Asegurar una **dirección de cuenta única**. Es decir, un enfoque estándar para identificar de manera única a los participantes en la red descentralizada
+- Autorización de una transacción por su remitente a través de la **firma digital**
+- Verificación de que el contenido de una transacción no está modificado. 
+
+See utilizan una combinación de **hashing y criptografía de clave pública**, que mencionamos anteriormente, para resolver estos problemas.
+
+### Obtención de direcciones de cuenta
