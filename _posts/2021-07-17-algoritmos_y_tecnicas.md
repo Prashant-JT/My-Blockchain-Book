@@ -121,18 +121,18 @@ Cuando los datos han sido pasados por una función de hash y posteriomente han s
 
 Veamos esto a través de un ejemplo sencillo. Considera que una transacción son esos datos que mencionabamos justo antes, entonces el proceso que se sigue es el siguiente:
 
-![](/My-Blockchain-Book/images/Digital-Signature-1.PNG "Paso 1: Obtención del hash de la transacción")
-
 Paso 1: Obtenemos el hash de los datos que están incluidos en la transacción.
 
-![](/My-Blockchain-Book/images/Digital-Signature-2.PNG "Paso 2: Cifrado del hash de la transacción con la clave privada")
+![](/My-Blockchain-Book/images/Digital-Signature-1.PNG "Paso 1: Obtención del hash de la transacción")
 
 Paso 2: Ciframos el hash obtenido con la clave privada del participante que esta generando la transacción. Esto es la **firmar digitalmente** la transacción para autorizar y hacer que la transacción no sea repudiable. 
 
-![](/My-Blockchain-Book/images/Digital-Signature-3.PNG "Paso 3: Verificación del hash firmado")
+![](/My-Blockchain-Book/images/Digital-Signature-2.PNG "Paso 2: Cifrado del hash de la transacción con la clave privada")
 
 Paso 3: Este hash firmado se agrega a la transacción y puede ser verificado por otros participantes descifrando este hash seguro usando la clave pública del remitente de la transacción (que la deben tener), y volver a calcular el hash de la transacción.
 
-![](/My-Blockchain-Book/images/Digital-Signature-4.PNG "Paso 4: Verificación de la transacción")
+![](/My-Blockchain-Book/images/Digital-Signature-3.PNG "Paso 3: Verificación del hash firmado")
 
 Paso 4: A continuación, se compara el hash calculado por el receptor y el hash recibido en la firma digital. Si ambos coinciden pues se acepta la transacción en el caso contrario, se rechaza. Además, hay que tener en cuenta que para una verificación completa de la transacción, también se verifican la marca de tiempo, los "nonce", los saldos de la cuenta y la suficiencia de las tarifas. 
+
+![](/My-Blockchain-Book/images/Digital-Signature-4.PNG "Paso 4: Verificación de la transacción")
