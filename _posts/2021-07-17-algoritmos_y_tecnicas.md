@@ -113,3 +113,26 @@ Las direcciones de las cuentas se generan usando la pareja de claves pública y 
 1. Se genera un número aleatorio de 256 bits y se asigna como la clave privada de la cuenta que se debe mantener protegida por una contraseña.
 2. Posteriormente, se aplica un algoritmo ECC a la clave privada, para obtener una clave pública única. A este paso ya tenemos el par de clave privada y pública.
 3. A continuación, se aplica una función hash a la clave pública para obtener la dirección de la cuenta. Esta dirección es más corta en tamaño, solo 20 bytes o 160 bits.
+
+Ahora que sabemos como se obtiene la dirección de la cuenta, veamos una transacción iniciada por esta dirección. Una transacción para transferir activos tendrá que ser: **autorizada, no repudiable e inmodificable**. Todo ello se logra a través de la **firma digital** que comentaremos a continuación.
+
+### Firma Digital
+Cuando los datos han sido pasados por una función de hash y posteriomente han sido cifrados con la clave privada del remitente, esto es lo que se conoce como **firma digital**. Cuando el receptor obtiene los datos originales y el hash seguro firmado digitalmente (hash de los datos + cifrado) este puede volver a calcular el hash de los datos originales recibidos y compararlo con el hash recibido para verificar la integridad del documento.
+
+Veamos esto a través de un ejemplo sencillo. Considera que una transacción son esos datos que mencionabamos justo antes, entonces el proceso que se sigue es el siguiente:
+
+![](/My-Blockchain-Book/images/Digital-Signature-1.PNG "Obtención del hash de la transacción")
+
+Paso 1: Obtenemos el hash de los datos que están incluidos en la transacción.
+
+![](/My-Blockchain-Book/images/Digital-Signature-2.PNG "Cifrado del hash de la transacción con la clave privada")
+
+Paso 2: Ciframos el hash obtenido con la clave privada del participante que esta generando la transacción. Esto es la **firmar digitalmente** la transacción para autorizar y hacer que la transacción no sea repudiable. 
+
+![](/My-Blockchain-Book/images/Digital-Signature-3.PNG "Verificación del hash firmado")
+
+Paso 3: Este hash firmado se agrega a la transacción y puede ser verificado por otros participantes descifrando este hash seguro usando la clave pública del remitente de la transacción (que la deben tener), y volver a calcular el hash de la transacción.
+
+![](/My-Blockchain-Book/images/Digital-Signature-4.PNG "Verificación de la transacción")
+
+Paso 4: A continuación, se compara el hash calculado por el receptor y el hash recibido en la firma digital. Si ambos coinciden pues se acepta la transacción en el caso contrario, se rechaza. Además, hay que tener en cuenta que para una verificación completa de la transacción, también se verifican la marca de tiempo, los "nonce", los saldos de la cuenta y la suficiencia de las tarifas. 
