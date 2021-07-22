@@ -105,6 +105,11 @@ Para gestionar la **integridad** de una transacción en la blockchain necesitamo
 - Autorización de una transacción por su remitente a través de la **firma digital**
 - Verificación de que el contenido de una transacción no está modificado. 
 
-See utilizan una combinación de **hashing y criptografía de clave pública**, que mencionamos anteriormente, para resolver estos problemas.
+Se utilizan una combinación de **hashing y criptografía de clave pública**, que mencionamos anteriormente, para resolver estos problemas.
 
-### Obtención de direcciones de cuenta
+### Obtención de Direcciones de Cuenta
+
+Las direcciones de las cuentas se generan usando la pareja de claves pública y privada. Para ello se realizan los siguientes pasos:
+1. Se genera un número aleatorio de 256 bits y se asigna como la clave privada de la cuenta que se debe mantener protegida por una contraseña.
+2. Posteriormente, se aplica un algoritmo ECC a la clave privada, para obtener una clave pública única. A este paso ya tenemos el par de clave privada y pública.
+3. A continuación, se aplica una función hash a la clave pública para obtener la dirección de la cuenta. Esta dirección es más corta en tamaño, solo 20 bytes o 160 bits.
