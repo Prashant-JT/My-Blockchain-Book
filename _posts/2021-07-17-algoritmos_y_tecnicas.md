@@ -159,6 +159,12 @@ En Ethereum, el **hash de bloque** se calcula a partir de todos los elementos pr
 
 El hash de un bloque en Ethereum se calcula primero calculando el **hash de la raíz de estado, el hash de la raíz de transacción y luego el hash de la raíz de recepción** que se muestra en la parte inferior de la cabecera del bloque. Estas raíces y todos los demás elementos del encabezado son hasheados juntos con una variable "nonce" para resolver el rompecabezas o puzle de prueba de trabajo (Proof of Work).
 
+El hash de bloque sirve para **dos propósitos importantes**:
+- Verificación de la integridad del bloque y las transacciones recogidas en él
+- Formación del enlace de la blockchain es decir, se incluye el hash del bloque anterior en el encabezado del bloque actual.
+
+Si algún nodo participante (computador o servidor) altera un bloque, se produce un cambio en su valor hash. Esto genera como resultado la falta de coincidencia de los valores hash y por lo tanto la representación de la blockchain local de dicho nodo pasa a un estado no válido. Además, cualquier futuro bloque iniciado o creado por este nodo sería rechazado por otros mineros debido a la discrepancia de hash. **Esto es lo que genera la inmutabilidad de la cadena**
+
 #### Transacciones en un bloque
 
 Un bloque típico de Bitcoin tiene alrededor de 2.000 transacciones y alrededor de 100 transacciones en Ethereum. Por lo tanto, necesitamos una forma eficiente de detectar manipulaciones y poder validar las transacciones de una manera eficiente.
@@ -175,3 +181,4 @@ Cuando el estado 19 se cambia a 20 eso genera como resultado un cambio en la rut
 
 ![](/My-Blockchain-Book/images/State-Merkle-Tree-1.PNG "Árbol Merkle final con hashes de los estados")
 
+> En resumen, se utiliza una combinación de hash y cifrado para asegurar los diversos elementos de la cadena de bloques. El par de claves públicas y privadas y el hash son conceptos fundamentales en las redes descentralizadas que operan más allá de los límites de confianza. 
