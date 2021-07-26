@@ -156,3 +156,20 @@ La **integridad de un bloque** en la blockchain se gestiona asegurando los sigui
 En Ethereum, el **hash de bloque** se calcula a partir de todos los elementos presentes en el encabezado del bloque, entre los que se incluyen el hash de la raíz de transacción y el hash de la raíz del estado. Este hash del bloque se calcula aplicando una variante del algoritmo SHA-3 llamado **Keccak** a todos los elementos del encabezado del bloque, como dijimos anteriormente.
 
 ![](/My-Blockchain-Book/images/Block-Hash.PNG "Elementos para el cálculo del hash de un bloque")
+
+#### Transacciones en un bloque
+
+Un bloque típico de Bitcoin tiene alrededor de 2.000 transacciones y alrededor de 100 transacciones en Ethereum. Por lo tanto, necesitamos una forma eficiente de detectar manipulaciones y poder validar las transacciones de una manera eficiente.
+
+Los hashes de las transacciones presentes en un bloque se procesan o se representan en una estructura de árbol llamada "Merkle tree hash" que ya comentamos previamente. Este tipo de estructura también se emplean para calcular el hash de la raíz del estado y de esta manera solo el hash de los estados encadenados de bloque a bloque tiene que ser re-calculado.
+
+La ventaja principal de la representaciónen en forma de árbol, es que si vamos a verificar alguna transacción solo debemos verificar una ruta del árbol y por lo tanto no tenemos que pasar por todo el conjunto de transacciones. A parte, la ejecución de un contrato inteligente en Ethereum genera como resultado cambios de estado y cada cambio de estado requiere volver a calcular el hash de la raíz de estado (State root). En lugar de calcular el hash para todo el conjunto de estados, solo es necesario volver a calcular la ruta afectada en el árbol Merkle.
+
+Supongamos que tenemos el siguiente árbol Merkle en el que se representan todos los hashes del estado (también podrían haber sido hashes de las transacciones del bloque):
+
+![](/My-Blockchain-Book/images/State-Merkle-Tree.PNG "Árbol Merkle inicial con hashes de los estados")
+
+Cuando el estado 19 se cambia a 20 eso genera como resultado un cambio en la ruta que incluye el estado 31, 41 y el hash de la raíz del estado 64 que tienen que ser re-calculados. Como se ve en la imagen, solo esa ruta se vuelve a calcular, no todo el árbol.  
+
+![](/My-Blockchain-Book/images/State-Merkle-Tree-1.PNG "Árbol Merkle final con hashes de los estados")
+
