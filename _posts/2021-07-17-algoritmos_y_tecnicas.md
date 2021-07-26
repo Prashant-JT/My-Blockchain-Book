@@ -136,3 +136,23 @@ Paso 3: Este hash firmado se agrega a la transacción y puede ser verificado por
 Paso 4: A continuación, se compara el hash calculado por el receptor y el hash recibido en la firma digital. Si ambos coinciden pues se acepta la transacción en el caso contrario, se rechaza. Además, hay que tener en cuenta que para una verificación completa de la transacción, también se verifican la marca de tiempo, los "nonce", los saldos de la cuenta y la suficiencia de las tarifas. 
 
 ![](/My-Blockchain-Book/images/Digital-Signature-4.PNG "Paso 4: Verificación de la transacción")
+
+## Seguridad de la blockchain
+
+Algunos de los componentes principales de un bloque de Ethereum son:
+- El encabezado
+- Las transacciones, incluyendo el hash de la transacción o la raíz de transacción
+- Y el estado, es decir, el hash de estado o la raíz de estado
+
+### Integridad de un bloque
+
+La **integridad de un bloque** en la blockchain se gestiona asegurando los siguientes conceptos:
+- Que el contenido de la cabecera del bloque no se haya alterado
+- Que las transacciones no se hayan alterado
+- Y que las transiciones de estado se calculen eficientemente, se calcule su hash y se verifiquen
+
+#### Hash del bloque
+
+En Ethereum, el **hash de bloque** se calcula a partir de todos los elementos presentes en el encabezado del bloque, entre los que se incluyen el hash de la raíz de transacción y el hash de la raíz del estado. Este hash del bloque se calcula aplicando una variante del algoritmo SHA-3 llamado **Keccak** a todos los elementos del encabezado del bloque, como dijimos anteriormente.
+
+![](/My-Blockchain-Book/images/Block-Hash.PNG "Elementos para el cálculo del hash de un bloque")
