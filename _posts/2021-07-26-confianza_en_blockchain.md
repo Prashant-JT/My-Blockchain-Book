@@ -34,5 +34,5 @@ El proceso o el camino para generar confianza en una blockchain es el siguiente:
 - Luego se trabaja para conseguir el consenso
 - Y finalmente todos agregan el bloque a su cadena local y confirman las transacciones
 
-![](/My-Blockchain-Book/images/Transaction-Validation.PNG "Proceso de confianza en blockchain")
+![](/My-Blockchain-Book/images/Trust-Trail.PNG "Proceso de confianza en blockchain")
 
