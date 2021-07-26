@@ -157,6 +157,8 @@ En Ethereum, el **hash de bloque** se calcula a partir de todos los elementos pr
 
 ![](/My-Blockchain-Book/images/Block-Hash.PNG "Elementos para el cálculo del hash de un bloque")
 
+El hash de un bloque en Ethereum se calcula primero calculando el **hash de la raíz de estado, el hash de la raíz de transacción y luego el hash de la raíz de recepción** que se muestra en la parte inferior de la cabecera del bloque. Estas raíces y todos los demás elementos del encabezado son hasheados juntos con una variable "nonce" para resolver el rompecabezas o puzle de prueba de trabajo (Proof of Work).
+
 #### Transacciones en un bloque
 
 Un bloque típico de Bitcoin tiene alrededor de 2.000 transacciones y alrededor de 100 transacciones en Ethereum. Por lo tanto, necesitamos una forma eficiente de detectar manipulaciones y poder validar las transacciones de una manera eficiente.
