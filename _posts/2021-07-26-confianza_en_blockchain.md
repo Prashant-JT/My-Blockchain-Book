@@ -40,4 +40,19 @@ Vamos a examinar cada uno de estos pasos a continuación:
 - El ***paso uno*** valida la transacción y el ***dos*** comprueba los recursos. En el caso de un **Bitcoin**, hay acerca de 20 criterios que tienen que verificarse antes de validar una transacción. Similarmente en el caso de una transacción en **Ethereum**, la sintaxis, la firma de transacción, la hora, el nonce, el límite de gas, y el saldo de la cuenta del remitente se validan antes de la ejecución de la transacción. El gas, o puntos de gas, y otros recursos disponibles para la ejecución del contrato inteligente, también se validan junto con el hash y las firmas de la transacción.
 - El ***paso tres*** es ejecutar las transacciones. Para ello en **Ethereum** se calcula el árbol merkle de las transacciones validadas y su raíz es situada en la cabecera del bloque (Transaction root). Todos los mineros ejecutan la transacción ya sea para transferir como para la ejecución de los contratos inteligentes. El estado resultante de dicha ejecución de la transacción es empleado para calcular el árbol merkle de los estados, cuya raíz se incluye en el encabezado de bloque (State root).
 
-A continuación vamos a continuar hablando acerca del siguiente paso en la ruta de confianza, que es el proceso de consenso. 
+A continuación vamos a continuar hablando acerca del siguiente paso en la ruta de confianza, que es el **proceso de consenso**.
+
+### Proceso de consenso
+
+Una cadena segura es aquella cadena única que posee un **estado consistente**. Cada bloque que se valida, se suma al nivel de confianza de esta cadena.
+
+Los mineros están compitiendo, para agregar su bloque a la cadena. Pero... ¿Qué pasa si todos los mineros quieren agregar su bloque candidato a la cadena? Hay que tener en cuenta que cada uno de los bloques candidatos pertenece a un minero competidor. Entonces, ¿Cuál es el siguiente bloque que se agregará a la cadena? ¿Pueden ponerse de acuerdo los mineros en el siguiente bloque a añadir? ¿Hay algún método o protocolo para elegir el siguiente bloque? Sí, lo hay. Se llama **Proof of Work** y también emplea la técnica de hashing que hemos comentado en anteriores post.
+
+![](/My-Blockchain-Book/images/Consensus-Protocol.PNG "Proceso de consenso para añadir un nuevo bloque")
+
+#### Proof of Work en Bitcoin y Ethereum
+
+
+
+
+
