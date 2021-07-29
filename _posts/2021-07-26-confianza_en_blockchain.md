@@ -42,7 +42,7 @@ Vamos a examinar cada uno de estos pasos a continuación:
 
 A continuación vamos a continuar hablando acerca del siguiente paso en la ruta de confianza, que es el **proceso de consenso**.
 
-### Proceso de consenso
+## Proceso de consenso
 
 Una cadena segura es aquella cadena única que posee un **estado consistente**. Cada bloque que se valida, se suma al nivel de confianza de esta cadena.
 
@@ -50,7 +50,7 @@ Los mineros están compitiendo, para agregar su bloque a la cadena. Pero... ¿Qu
 
 ![](/My-Blockchain-Book/images/Consensus-Protocol.PNG "Proceso de consenso para añadir un nuevo bloque")
 
-#### Proof of Work en Bitcoin y Ethereum
+### Proof of Work en Bitcoin y Ethereum
 
 Desde el punto de vista de un minero, que pretende añadir su bloque a la blockchain se sigue el siguiente proceso:
 1. Se calcula el hash de los elementos de la cabecera del bloque, que es un valor fijo, junto con un nonce que es una variable
@@ -62,4 +62,5 @@ Si el reto o el puzle ha sido resuelto, se emite el bloque ganador por el minero
 
 ![](/My-Blockchain-Book/images/Proof-of-Work-1.PNG "Proof of Work en Bitcoin y Ethereum")
 
-
+El minero ganador recibe un incentivo por crear el bloque en la cadena. ***Proof of Work*** es un protocolo de consenso utilizado por la
+blockchain de Bitcoin y también por la versión actual de Ethereum. El protocolo puede ser el mismo, pero las implementaciones en estas dos cadenas de bloques son diferentes. Muchos otros enfoques, como Proof of Stake, Proof of Elapsed Time, han sido propuestos. Este es un área muy debatida entre los desarrolladores de blockchain. 
