@@ -52,7 +52,14 @@ Los mineros están compitiendo, para agregar su bloque a la cadena. Pero... ¿Qu
 
 #### Proof of Work en Bitcoin y Ethereum
 
+Desde el punto de vista de un minero, que pretende añadir su bloque a la blockchain se sigue el siguiente proceso:
+1. Se calcula el hash de los elementos de la cabecera del bloque, que es un valor fijo, junto con un nonce que es una variable
+2. Si el valor hash es menor que 2^128 para **Bitcoin** o menor que la función de dificultad para **Ethereum**, entonces el rompecabezas o el puzle ha sido resuelto. En el caso contrario, se repite el proceso cambiando el valor nonce.
 
+![](/My-Blockchain-Book/images/Proof-of-Work.PNG "Proof of Work en Bitcoin y Ethereum")
 
+Si el reto o el puzle ha sido resuelto, se emite el bloque ganador por el minero que será verificado por otros mineros. Además, los nodos mineros no ganadores agregan este nuevo bloque a su copia local de la cadena y pasan a trabajar en el siguiente bloque que se añadira a la cadena.
+
+![](/My-Blockchain-Book/images/Proof-of-Work-1.PNG "Proof of Work en Bitcoin y Ethereum")
 
 
